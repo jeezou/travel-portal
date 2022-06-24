@@ -68,6 +68,10 @@ export default {
     display: flex;
     column-gap: 42px;
     align-self: center;
+
+    &__item {
+      cursor: pointer;
+    }
   }
 
   .login {

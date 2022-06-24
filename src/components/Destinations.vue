@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h2 class="heading">popular destinations</h2>
+    <h2 class="heading">Popular Destinations</h2>
     <Slider />
   </div>
 </template>
@@ -22,9 +22,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   row-gap: 60px;
-
   margin-bottom: 40px;
 
   .heading {

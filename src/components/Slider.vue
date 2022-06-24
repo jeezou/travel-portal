@@ -28,6 +28,10 @@
         ></div>
       </template>
     </div>
+    <div class="btn">
+      <img src="../assets/bi_arrow-right.svg" alt="arrow" class="btn__arrow" />
+      Find More
+    </div>
   </div>
 </template>
 
@@ -103,9 +107,7 @@ export default {
     align-items: center;
     display: flex;
     flex-direction: row;
-
     column-gap: 60px;
-
     transition: all 0.5s ease-in-out;
   }
 
@@ -120,7 +122,6 @@ export default {
     border-radius: 50%;
     background: rgba(242, 120, 92, 0.5);
     cursor: pointer;
-
     transition: all 0.3s ease-in-out;
 
     &:hover {
@@ -133,6 +134,28 @@ export default {
       &:hover {
         background: #f2785c;
       }
+    }
+  }
+
+  .btn {
+    font-family: "Red Hat Text", sans-serif;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    background: #0d606f;
+    color: #fff;
+    font-size: 24px;
+    line-height: 32px;
+    padding: 9.5px 31px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08),
+      0px 2px 3px rgba(13, 96, 111, 0.16);
+
+    cursor: pointer;
+
+    &__arrow {
+      width: 40px;
     }
   }
 }
