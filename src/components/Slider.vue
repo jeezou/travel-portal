@@ -28,10 +28,6 @@
         ></div>
       </template>
     </div>
-    <div class="btn">
-      <img src="../assets/bi_arrow-right.svg" alt="arrow" class="btn__arrow" />
-      Find More
-    </div>
   </div>
 </template>
 
@@ -47,16 +43,8 @@ export default {
       desc: "SPAIN",
     },
     {
-      img: "slide3.jpg",
-      desc: "USA",
-    },
-    {
       img: "slide2.jpg",
       desc: "JAPAN",
-    },
-    {
-      img: "slide1.jpg",
-      desc: "SPAIN",
     },
     {
       img: "slide3.jpg",
@@ -134,28 +122,6 @@ export default {
       &:hover {
         background: #f2785c;
       }
-    }
-  }
-
-  .btn {
-    font-family: "Red Hat Text", sans-serif;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
-    background: #0d606f;
-    color: #fff;
-    font-size: 24px;
-    line-height: 32px;
-    padding: 9.5px 31px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08),
-      0px 2px 3px rgba(13, 96, 111, 0.16);
-
-    cursor: pointer;
-
-    &__arrow {
-      width: 40px;
     }
   }
 }
