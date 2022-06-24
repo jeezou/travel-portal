@@ -1,29 +1,16 @@
 <template>
   <div class="container">
-    <Heading
-      :cl="'heading'"
-      :level="2"
-      :content="'popular destinations'"
-      :s="{
-        color: '#f2785c',
-        fontFamily: 'Red Hat Text',
-        fontSize: '40px',
-        fontWeight: '500',
-        lineHeight: '53px',
-        textTransform: 'uppercase',
-      }"
-    />
+    <h2 class="heading">popular destinations</h2>
     <Slider />
   </div>
 </template>
 
 <script>
-import Heading from "@/components/Heading.vue";
 import Slider from "@/components/Slider.vue";
 
 export default {
   name: "Destinations",
-  components: { Heading, Slider },
+  components: { Slider },
   data() {
     return {};
   },
@@ -39,5 +26,14 @@ export default {
   row-gap: 60px;
 
   margin-bottom: 40px;
+
+  .heading {
+    color: #f2785c;
+    font-family: "Red Hat Text";
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 53px;
+    text-transform: uppercase;
+  }
 }
 </style>

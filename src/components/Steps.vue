@@ -1,22 +1,10 @@
 <template>
   <div class="container">
-    <Heading
-      :cl="'heading'"
-      :level="2"
-      :content="'3 Steps To The Perfect Trip'"
-      :s="{
-        color: '#f2785c',
-        fontFamily: 'Red Hat Text',
-        fontSize: '40px',
-        fontWeight: '500',
-        lineHeight: '53px',
-        textTransform: 'uppercase',
-      }"
-    />
+    <h2 class="heading">3 Steps To The Perfect Trip</h2>
     <div class="cards">
-      <template v-for="card in cards" :key="card">
+      <template v-for="card in $options.cards" :key="card">
         <StepCard
-          :img="require('@/assets/' + card.img + '')"
+          :img="require(`@/assets/${card.img}`)"
           :content="card.content"
         />
       </template>
@@ -25,34 +13,31 @@
 </template>
 
 <script>
-import Heading from "@/components/Heading.vue";
 import StepCard from "@/components/StepCard.vue";
 
 export default {
   name: "Steps",
-  components: { Heading, StepCard },
+  components: { StepCard },
+  cards: [
+    {
+      img: "step1.svg",
+      content: "Tell us what you want to do",
+    },
+    {
+      img: "step2.svg",
+      content: "Share us preferable dates ",
+    },
+    {
+      img: "step3.svg",
+      content: "We will give you recommendations",
+    },
+  ],
   data() {
-    return {
-      cards: [
-        {
-          img: "step1.svg",
-          content: "Tell us what you want to do",
-        },
-        {
-          img: "step2.svg",
-          content: "Share us preferable dates ",
-        },
-        {
-          img: "step3.svg",
-          content: "We will give you recommendations",
-        },
-      ],
-    };
+    return {};
   },
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 .container {
   padding: 80px 0 97px 0;
@@ -60,6 +45,15 @@ export default {
   flex-direction: column;
   align-items: center;
   row-gap: 40px;
+
+  .heading {
+    color: #f2785c;
+    font-family: "Red Hat Text";
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 53px;
+    text-transform: uppercase;
+  }
 
   .cards {
     display: flex;

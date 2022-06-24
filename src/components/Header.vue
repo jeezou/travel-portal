@@ -1,14 +1,6 @@
 <template>
   <div class="container">
-    <Heading
-      :cl="'heading'"
-      :level="1"
-      :content="'Explore the beauty of the World'"
-      :s="{
-        fontSize: '80px',
-        lineHeight: '96px',
-      }"
-    />
+    <h1 class="heading">Explore the beauty of the World</h1>
     <p class="par">
       Receive personalized recommendations for countries, hotels, activities and
       more
@@ -21,11 +13,9 @@
 </template>
 
 <script>
-import Heading from "@/components/Heading.vue";
-
 export default {
   name: "Header",
-  components: { Heading },
+  components: {},
 };
 </script>
 
@@ -43,6 +33,11 @@ export default {
   row-gap: 46px;
 
   max-width: 892px;
+
+  .heading {
+    font-size: 80px;
+    line-height: 96px;
+  }
 }
 
 .par {

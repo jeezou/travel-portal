@@ -6,10 +6,10 @@
         <span class="logo__content">Travel Portal</span>
       </div>
       <div class="links">
-        <a class="hiw"> How It Works </a>
-        <a class="pyt"> Plan Your Trip </a>
-        <a class="dest"> Destination </a>
-        <a class="travel"> Travel Stories </a>
+        <a class="links__item"> How It Works </a>
+        <a class="links__item"> Plan Your Trip </a>
+        <a class="links__item"> Destination </a>
+        <a class="links__item"> Travel Stories </a>
       </div>
       <button type="button" class="login">Login</button>
     </div>
